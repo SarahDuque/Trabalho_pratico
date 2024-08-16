@@ -36,12 +36,12 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.inline {
+.alinhar {
     display: inline-block;
     margin-right: 20px;
 }
 
-.inline label {
+.alinhar label {
     display: inline;
 }
 
@@ -51,10 +51,10 @@ span {
     display: block;
     margin-top: -10px;
     margin-bottom: 10px;
-    visibility: hidden; /* Inicialmente oculto */
+    visibility: hidden; 
 }
 
-.form-group {
+.campos {
     margin-bottom: 15px;
 }
 

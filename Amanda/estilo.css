@@ -50,10 +50,9 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
+
 /*A classe alinhar define que os elementos com essa classe serão exibidos em linha
 e terão uma margem à direita.*/
-
-/* "." é para declarar uma variável */
 
 .alinhar { 
     display: inline-block;

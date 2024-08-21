@@ -6,12 +6,15 @@ body {
     background-image: url(https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGNvbWljJTIwYm9va3N8ZW58MHx8fHwxNjUzNDk5MTEz&ixlib=rb-1.2.1&q=80&w=2000);
 }
 
+/*Título*/
+
 h1{
     text-align: center;
     color: white;
     background-color: #ff0000;
 }
 
+/* Estilo ao passar o mouse por cima: Muda a cor de fundo para um tom de azul */
 h1:hover {
     background-color: #0056b3;
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Interesse - Caixa Temática de Filmes</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="icon_ec0b0792fe83bfb3f9f32a27bdb25972.ico" />
+</head>
+<body>
+    <form id="formulario">
+        <h1>Caixa Temática de Filmes</h1>
+        <p>Preencha o formulário abaixo para expressar seu interesse em adquirir uma caixa temática com itens exclusivos de filmes. Escolha seu tema favorito e os itens adicionais que gostaria de incluir!</p>
+
+        <div class="campos">
+            <label for="nome">Digite seu nome inteiro:</label>
+            <input type="text" name="nome" id="nome">
+            <span id="alerta-nome">*Preencha o campo</span>
+        </div>
+
+        <div class="campos">
+            <label for="age">Digite sua idade:</label>
+            <input type="number" name="age" id="age" min="18">
+            <span id="alerta-age">*Preencha o campo</span>
+        </div>
+
+        <div class="campos">
+            <label for="telef">Digite seu número de telefone:</label>
+            <input type="tel" name="telef" id="telef" placeholder="Ex: 00999999999">
+            <span id="alerta-telef">*Preencha com telefone válido</span>
+        </div>
+
+        <div class="campos">
+            <label for="email">Digite seu email:</label>
+            <input type="email" name="email" id="email" placeholder="Ex: exemplo@mail.com">
+            <span id="alerta-email">*Preencha com email válido</span>
+        </div>
+
+        <div class="campos">
+            <label for="gen">Qual seu gênero:</label>
+            <select id="gen" name="gen">
+                <option value="" hidden selected></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="neutro">Neutro</option>
+                <option value="outro">Prefiro não informar</option>
+            </select>
+            <span id="alerta-gen">*Selecione uma opção</span>
+        </div>
+
+        <div class="campos">
+            <label>Escolha o tema da caixa:</label><br>
+            <div class="alinhar">
+                <input type="radio" name="filme" id="dw" value="Deadpool & Wolverine">
+                <label for="dw">Deadpool & Wolverine</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="filme" id="mm" value="Meu Malvado Favorito 4">
+                <label for="mm">Meu Malvado Favorito 4</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="filme" id="div" value="Divertidamente 2">
+                <label for="div">Divertidamente 2</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="filme" id="a" value="Alien: Romulus">
+                <label for="a">Alien: Romulus</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="filme" id="t" value="Twisters">
+                <label for="t">Twisters</label>
+            </div>
+        </div>
+        <span id="alerta-filme">*Selecione uma opção</span>
+
+        <div class="campos">
+            <label>Tamanho da Caixa:</label><br>
+            <div class="alinhar">
+                <input type="radio" name="caixa" id="p" value="p">
+                <label for="p">P - 5 itens (R$40,00)</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="caixa" id="m" value="m">
+                <label for="m">M - 8 itens (R$70,00)</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="caixa" id="g" value="g">
+                <label for="g">G - 12 itens (R$120,00)</label>
+            </div>   
+        </div>
+        <span id="alerta-caixa">*Selecione uma opção</span>
+
+        <div class="campos">
+            <label>Tamanho da Camisa:</label><br>
+            <div class="alinhar">
+                <input type="radio" name="tam" id="P" value="P">
+                <label for="P">P</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="tam" id="M" value="M">
+                <label for="M">M</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="tam" id="G" value="G">
+                <label for="G">G</label>
+            </div>
+            <div class="alinhar">
+                <input type="radio" name="tam" id="GG" value="GG">
+                <label for="GG">GG</label>
+            </div>    
+        </div>
+        <span id="alerta-tam">*Selecione uma opção</span>
+     
+        <div class="campos">
+            <label>Adicionais:</label><br>
+            <div class="alinhar">
+                <input type="checkbox" id="Camisa" value="Camisa">
+                <label for="Camisa">Camisa</label>
+            </div>
+            <div class="alinhar">
+                <input type="checkbox" id="Poster" value="Poster">
+                <label for="Poster">Poster</label>
+            </div>
+            <div class="alinhar">
+                <input type="checkbox" id="Chaveiro" value="Chaveiro">
+                <label for="Chaveiro">Chaveiro</label>
+            </div>
+            <div class="alinhar">
+                <input type="checkbox" id="Colar" value="Colar">
+                <label for="Colar">Colar</label>
+            </div>
+            <div class="alinhar">
+                <input type="checkbox" id="Caneca" value="Caneca">
+                <label for="Caneca">Caneca</label>
+            </div>
+            <div class="alinhar">
+                <input type="checkbox" id="Funko" value="Funko-pop">
+                <label for="Funko">Funko-pop</label>
+            </div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script type="text/javascript" src="java.js"></script>
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css">

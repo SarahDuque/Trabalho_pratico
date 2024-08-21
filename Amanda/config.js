@@ -79,7 +79,7 @@ document.getElementById('formulario').addEventListener('submit', function(evento
 
     // Se todos os campos estiverem válidos, envie o formulário e limpe-o
     if (valido) {
-        alert('Formulário enviado com sucesso!');
         this.reset(); // Limpa todos os campos do formulário
+        alert('Formulário enviado com sucesso!');
     }
 });

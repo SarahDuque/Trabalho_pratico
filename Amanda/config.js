@@ -33,7 +33,7 @@ document.getElementById('formulario').addEventListener('submit', function(evento
 
     // Validação do telefone
     const telef = document.getElementById('telef').value.trim();
-    const telPadrao = /^\(\d{2}\)\d{5}\d{4}$/; // Formato XXXXXXXXXXX
+    const telPadrao = /^\d{11}$/; // Formato XXXXXXXXXXX
     // ^ é inicio da String e $ o final. Não pode haver espaço no começo ou fim. {indica a quantia de valores}
     if (telef === '' || !telPadrao.test(telef)) {
         document.getElementById('alerta-telef').style.visibility = 'visible';

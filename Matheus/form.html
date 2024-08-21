@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Define o tipo de documento como HTML5 -->
     <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres como UTF-8, que cobre quase todos os caracteres da linguagem escrita -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Define a escala inicial da página para dispositivos móveis e garante a responsividade -->
     <title>Formulário</title>
     <!-- Define o título da página que será exibido na aba do navegador -->
     <link rel="stylesheet" href="estilo.css">
-    <!-- Inclui o arquivo de estilo CSS para estilizar a página -->
     <link rel="shortcut icon" href="icon_ec0b0792fe83bfb3f9f32a27bdb25972.ico" />
     <!-- Define o ícone que será exibido na aba do navegador ao lado do título -->
 </head>
 <body>
-    <!-- Início do corpo da página -->
+    
     <form id="formulario">
         <!-- Início do formulário com o identificador "formulario" -->
         <h1>Caixa Temática de Filmes</h1>
@@ -22,20 +18,16 @@
         <p>Preencha o formulário abaixo para expressar seu interesse em adquirir uma caixa temática com itens exclusivos de filmes. Escolha seu tema favorito e os itens adicionais que gostaria de incluir!</p>
         <!-- Parágrafo explicativo sobre o formulário -->
 
-        <div class="campos">
-            <!-- Div para agrupar o campo do nome com a classe "campos" -->
+        <div class="campos"><!-- Div para agrupar o campo do nome com a classe "campos" --> 
             <label for="nome">Digite seu nome inteiro:</label>
-            <!-- Rótulo para o campo de texto do nome -->
             <input type="text" name="nome" id="nome">
             <!-- Campo de entrada de texto para o nome -->
             <span id="alerta-nome">*Preencha o campo</span>
-            <!-- Mensagem de alerta para o nome, inicialmente invisível -->
+            <!-- Mensagem de alerta para o nome -->
         </div>
 
         <div class="campos">
-            <!-- Div para agrupar o campo da idade -->
             <label for="age">Digite sua idade:</label>
-            <!-- Rótulo para o campo de número da idade -->
             <input type="number" name="age" id="age" min="18">
             <!-- Campo de entrada de número para a idade, com um valor mínimo de 18 -->
             <span id="alerta-age">*Preencha o campo</span>
@@ -43,9 +35,7 @@
         </div>
 
         <div class="campos">
-            <!-- Div para agrupar o campo do telefone -->
             <label for="telef">Digite seu número de telefone:</label>
-            <!-- Rótulo para o campo de telefone -->
             <input type="tel" name="telef" id="telef" placeholder="Ex: 00999999999">
             <!-- Campo de entrada de telefone com um placeholder de exemplo -->
             <span id="alerta-telef">*Preencha com telefone válido</span>
@@ -53,9 +43,7 @@
         </div>
 
         <div class="campos">
-            <!-- Div para agrupar o campo do e-mail -->
             <label for="email">Digite seu email:</label>
-            <!-- Rótulo para o campo de e-mail -->
             <input type="email" name="email" id="email" placeholder="Ex: exemplo@mail.com">
             <!-- Campo de entrada de e-mail com um placeholder de exemplo -->
             <span id="alerta-email">*Preencha com email válido</span>
@@ -63,36 +51,25 @@
         </div>
 
         <div class="campos">
-            <!-- Div para agrupar o campo do gênero -->
             <label for="gen">Qual seu gênero:</label>
-            <!-- Rótulo para a seleção de gênero -->
             <select id="gen" name="gen">
                 <!-- Campo de seleção de gênero -->
                 <option value="" hidden selected></option>
                 <!-- Opção escondida e pré-selecionada para evitar uma escolha vazia -->
                 <option value="masculino">Masculino</option>
-                <!-- Opção de gênero masculino -->
                 <option value="feminino">Feminino</option>
-                <!-- Opção de gênero feminino -->
                 <option value="neutro">Neutro</option>
-                <!-- Opção de gênero neutro -->
                 <option value="outro">Prefiro não informar</option>
-                <!-- Opção para não informar o gênero -->
             </select>
             <span id="alerta-gen">*Selecione uma opção</span>
             <!-- Mensagem de alerta para a seleção de gênero -->
         </div>
 
         <div class="campos">
-            <!-- Div para agrupar a escolha do tema da caixa -->
             <label>Escolha o tema da caixa:</label><br>
-            <!-- Rótulo para a escolha do tema -->
             <div class="alinhar">
-                <!-- Div para alinhar o input com o rótulo -->
                 <input type="radio" name="filme" id="dw" value="Deadpool & Wolverine">
-                <!-- Botão de opção para o tema "Deadpool & Wolverine" -->
                 <label for="dw">Deadpool & Wolverine</label>
-                <!-- Rótulo para o tema "Deadpool & Wolverine" -->
             </div>
             <div class="alinhar">
                 <!-- Outra opção para o tema da caixa -->
@@ -116,14 +93,10 @@
         <!-- Mensagem de alerta para a escolha do tema do filme -->
 
         <div class="campos">
-            <!-- Div para agrupar a escolha do tamanho da caixa -->
             <label>Tamanho da Caixa:</label><br>
-            <!-- Rótulo para a escolha do tamanho da caixa -->
             <div class="alinhar">
                 <input type="radio" name="caixa" id="p" value="p">
-                <!-- Botão de opção para o tamanho "P" -->
                 <label for="p">P - 5 itens (R$40,00)</label>
-                <!-- Rótulo para o tamanho "P" -->
             </div>
             <div class="alinhar">
                 <input type="radio" name="caixa" id="m" value="m">
@@ -138,9 +111,7 @@
         <!-- Mensagem de alerta para a escolha do tamanho da caixa -->
 
         <div class="campos">
-            <!-- Div para agrupar a escolha do tamanho da camisa -->
             <label>Tamanho da Camisa:</label><br>
-            <!-- Rótulo para a escolha do tamanho da camisa -->
             <div class="alinhar">
                 <input type="radio" name="tam" id="P" value="P">
                 <label for="P">P</label>
@@ -162,9 +133,7 @@
         <!-- Mensagem de alerta para a escolha do tamanho da camisa -->
      
         <div class="campos">
-            <!-- Div para agrupar a escolha dos itens adicionais -->
             <label>Adicionais:</label><br>
-            <!-- Rótulo para a escolha dos itens adicionais -->
             <div class="alinhar">
                 <input type="checkbox" id="Camisa" value="Camisa">
                 <label for="Camisa">Camisa</label>

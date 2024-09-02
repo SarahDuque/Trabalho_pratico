@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo do site -->
+    <title>Mochilas - Vovô Juju</title>
+    <!--Instalação Jquery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+    <script defer src="./js/flipCard.js"></script>
+    <!-- ligação da personalização do site -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilopesquisa.css">
+
+    <!-- logo perto do titulo do site -->
+    <link rel="stylesheet" href="css/estiloGrid.css">
+    <link rel="shortcut icon" href="img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>    
+     <div class="cart">
+    <div class="center"></div>
+    <div class="logo"><img src="img/lolo logo.png" alt=""></div>
+
+   
+
+        <div class="icon-cart">
+            <div class="icon-favs">
+                <svg class="favcora-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+                <h3 class="text-favs">favoritos</h3>
+            </div>
+            <div class="cartfav">
+                <svg class="carro-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                </svg>
+                <h3 class="text-favs">carrinho</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- caixinha de pesquisa -->
+    <input type="checkbox" id="check" />
+    <div class="caixa-pesquisa">
+        <input type="text" placeholder="Digite o nome do produto...">
+        <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+        </label>
+    </div>
+
+    <section class="perfil-lolo">
+        <div class="nome-perfil">
+            <h1>Julia Matos</h1>
+        </div>
+        <div class="sair-perfil">
+            <svg class="exit-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
+            </svg>
+            <h1>Sair</h1>
+        </div>
+
+        <head>
+            <div class="container-dev-ras">
+                <div class="rastrear-devolver">
+                    <div class="rastrear">
+                        <svg class="caminhao" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+                        </svg>
+                        <h1 class="text-favs">rastrear</h1>
+                    </div>
+                    <div class="devolver">
+                        <svg class="devolver-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.013 6.175 7.006 9.369l5.007 3.194-5.007 3.193L2 12.545l5.006-3.193L2 6.175l5.006-3.194 5.007 3.194ZM6.981 17.806l5.006-3.193 5.006 3.193L11.987 21l-5.006-3.194Z" />
+                            <path
+                                d="m12.013 12.545 5.006-3.194-5.006-3.176 4.98-3.194L22 6.175l-5.007 3.194L22 12.562l-5.007 3.194-4.98-3.211Z" />
+                        </svg>
+                        <h1 class="text-favs">devolver</h1>
+                    </div>
+
+                </div>
+            </div>
+        </head>
+
+        <div class="foto-perfil">
+            <img src="img/Novo Projeto.png" class="logo-perfil" width="100" height="100" alt="">
+        </div>
+
+    </section>
+
+    <section class="produtos-lolo">
+        <div class="filtro">
+            <h1>Filtros
+                <svg class="filter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M5.05 3C3.291 3 2.352 5.024 3.51 6.317l5.422 6.059v4.874c0 .472.227.917.613 1.2l3.069 2.25c1.01.742 2.454.036 2.454-1.2v-7.124l5.422-6.059C21.647 5.024 20.708 3 18.95 3H5.05Z" />
+                </svg>
+            </h1>
+        </div>
+        <div class="produtos-maquiagem">
+            <ul class="filtros">
+            <li>infantil</li>
+            <li>masculino</li>
+            <li>feminino</li>
+            <li>monocromatico</li>
+            <li>colorido</li>
+            <li>lançamentos</li>
+        </ul>
+        </div>
+    </section>
+
+    <script src="./js/pagJs.js"></script>
+
+    <!-- fim categoria -->
+    <!-- inicio categorias produtos -->
+    <section class="page-container">
+        <div class="produtos">
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem0" src="./img/grid_imagens/121-76f8839d0b4e8544bd1692019562.png" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Dinossauro Amigo</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$52,78
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$38,40</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">12% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Dinossauro amigo irá ficar de olho nas suas costas para te proteger.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem1" src="./img/grid_imagens/cn-11134207-7r98o-lonr28sqj9n5ec_tn.jpg" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Monstrinho Divertido</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$46,66
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual com acabamento aveludado, o pó facial Intense controla a
+                                        oleosidade da pele e possui efeito mate, deixando a pele sem brilho. Fácil de
+                                        aplicar e com textura fininha, o pó facial disfarça pequenas imperfeições e
+                                        ainda tem FPS 15 em sua fórmula.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem2" src="./img/grid_imagens/3248118969_1GG.png" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Sapo Suspeito</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$46,66
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual com acabamento aveludado, o pó facial Intense controla a
+                                        oleosidade da pele e possui efeito mate, deixando a pele sem brilho. Fácil de
+                                        aplicar e com textura fininha, o pó facial disfarça pequenas imperfeições e
+                                        ainda tem FPS 15 em sua fórmula.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem3" src="./img/grid_imagens/71Qkp9Aa8qL._AC_SR462,693.png" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Dinossouro Berrante</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$46,66
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual com acabamento aveludado, o pó facial Intense controla a
+                                        oleosidade da pele e possui efeito mate, deixando a pele sem brilho. Fácil de
+                                        aplicar e com textura fininha, o pó facial disfarça pequenas imperfeições e
+                                        ainda tem FPS 15 em sua fórmula.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem4" src="./img/grid_imagens/D_NQ_NP_659495-CBT71880593565_09.png" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Gato Assustado</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$46,66
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual com acabamento aveludado, o pó facial Intense controla a
+                                        oleosidade da pele e possui efeito mate, deixando a pele sem brilho. Fácil de
+                                        aplicar e com textura fininha, o pó facial disfarça pequenas imperfeições e
+                                        ainda tem FPS 15 em sua fórmula.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem5" src="./img/grid_imagens/D_NQ_NP_951680-CBT76531234572_05.png" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Panda Sugestivo</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$46,66
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual com acabamento aveludado, o pó facial Intense controla a
+                                        oleosidade da pele e possui efeito mate, deixando a pele sem brilho. Fácil de
+                                        aplicar e com textura fininha, o pó facial disfarça pequenas imperfeições e
+                                        ainda tem FPS 15 em sua fórmula.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #000000;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <!-- fim inicio categorias produtros  -->
+
+    </section>
+</body>
+
+</html>
